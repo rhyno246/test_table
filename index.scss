@@ -1,0 +1,132 @@
+//new
+@mixin TableAndMobile {
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+@mixin Mobile {
+    @media (max-width : 767px){
+        @content;
+    }
+}
+.overview-table {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: auto;
+
+    @include TableAndMobile {
+        overflow: auto;
+    }
+
+    &.reset-top {
+        thead {
+            .overview-table-header {
+                th {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        min-width: 128rem;
+        margin: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-right: 1px solid #C7C7C7;
+        font-size: 14px;
+        table-layout: fixed;
+
+        @include Mobile {
+            font-size: 12px;
+        }
+
+        thead {
+            @include TableAndMobile {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                position: relative;
+            }
+
+            .overview-table-header {
+                th {
+                    position: -webkit-sticky;
+                    position: sticky;
+                    z-index: 100;
+                    top: 0;
+                    border-right: none;
+                    border: 1px solid;
+                    background-color: red;
+                    @include TableAndMobile {
+                        top: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .overview-table-total {
+                th {
+                    position: -webkit-sticky;
+                    position: sticky;
+                    z-index: 100;
+                    top: 50px !important;
+                    border-right: none;
+                    font-weight: 700;
+                    @include TableAndMobile {
+                        top: 82px !important;
+                    }
+                }
+            }
+        }
+
+        td {
+            padding: 5px 10px;
+            vertical-align: top;
+            border-top: none !important;
+            border-right: none !important;
+            border: 1px solid;
+
+            a {
+                font-size: 13px;
+            }
+        }
+
+        .parent-tr {
+            td {
+                &:last-child {
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .no-info {
+            background: #FFF3ED;
+        }
+
+        tbody {
+            @include TableAndMobile {
+                display: block;
+                max-height: 600px;
+                overflow-y: scroll;
+
+                tr {
+                    display: table;
+                    table-layout: fixed;
+                    width: 100%;
+                }
+                
+            }
+            th{
+                border: 1px solid;
+            }
+        }
+    }
+}
+
+.content{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,97 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000312}}
+.overview-table {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin: auto; }
+  @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000312}}
+    .overview-table {
+      overflow: auto; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000325}}
+  .overview-table.reset-top thead .overview-table-header th {
+    top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000332}}
+  .overview-table table {
+    width: 100%;
+    min-width: 128rem;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-right: 1px solid #C7C7C7;
+    font-size: 14px;
+    table-layout: fixed; }
+    @media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000332}}
+      .overview-table table {
+        font-size: 12px; } }
+    @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000346}}
+      .overview-table table thead {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        position: relative; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000355}}
+    .overview-table table thead .overview-table-header th {
+      position: -webkit-sticky;
+      position: sticky;
+      z-index: 100;
+      top: 0;
+      border-right: none;
+      border: 1px solid;
+      background-color: red; }
+      @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000355}}
+        .overview-table table thead .overview-table-header th {
+          top: 0;
+          width: 100%; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000371}}
+    .overview-table table thead .overview-table-total th {
+      position: -webkit-sticky;
+      position: sticky;
+      z-index: 100;
+      top: 50px !important;
+      border-right: none;
+      font-weight: 700; }
+      @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000371}}
+        .overview-table table thead .overview-table-total th {
+          top: 82px !important; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000385}}
+    .overview-table table td {
+      padding: 5px 10px;
+      vertical-align: top;
+      border-top: none !important;
+      border-right: none !important;
+      border: 1px solid; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000392}}
+      .overview-table table td a {
+        font-size: 13px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\0000399}}
+    .overview-table table .parent-tr td:last-child {
+      font-size: 13px;
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\00003106}}
+    .overview-table table .no-info {
+      background: #FFF3ED; }
+    @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\00003110}}
+      .overview-table table tbody {
+        display: block;
+        max-height: 600px;
+        overflow-y: scroll; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\00003116}}
+        .overview-table table tbody tr {
+          display: table;
+          table-layout: fixed;
+          width: 100%; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\00003123}}
+    .overview-table table tbody th {
+      border: 1px solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/PC\/Desktop\/test\/index\.scss}line{font-family:\00003130}}
+.content {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=index.css.map */
